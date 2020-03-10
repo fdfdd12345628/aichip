@@ -39,7 +39,7 @@ d2 = Dense(units=10, activation='softmax')(f1)
 model = Model(inputs=input_layer, outputs=d2)
 model.compile(
     # optimizer=keras.optimizers.SGD(learning_rate=LEARNINT_RATE,),
-    optimizer=keras.optimizers.SGD(learning_rate=LEARNINT_RATE),
+    optimizer=keras.optimizers.Adam(),
     loss='categorical_crossentropy',
     metrics=['acc'],
 )

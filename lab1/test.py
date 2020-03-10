@@ -4,10 +4,10 @@ from tensorflow.keras import Model
 from tensorflow.keras.layers import Dense, Conv2D, Input, Flatten, MaxPool2D, Conv1D
 from tensorflow.keras.datasets import mnist
 
-tf_config = tf.ConfigProto()
-tf_config.gpu_options.per_process_gpu_memory_fraction = 0.5
-tf_config.gpu_options.allow_growth = True
-keras.backend.set_session(tf.Session(config=tf_config))
+# tf_config = tf.ConfigProto()
+# tf_config.gpu_options.per_process_gpu_memory_fraction = 0.5
+# tf_config.gpu_options.allow_growth = True
+# keras.backend.set_session(tf.Session(config=tf_config))
 
 LEARNINT_RATE = 0.01
 BATCH_SIZE = 32
